@@ -29,7 +29,7 @@ jobs:
       - name: Install OpenLane
         run: pip install openlane
       - name: Run RTL-to-GDSII flow
-        run: openlane --dockerized config.json
+        run: script -q -e -c "openlane --dockerized config.json" /dev/null
       - name: Show manufacturability result
         run: cat runs/*/final/metrics.json | grep -E "route__drc_errors|design__lvs_error__count|design__instance__count"
       - name: Upload results
