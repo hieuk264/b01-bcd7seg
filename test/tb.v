@@ -4,6 +4,8 @@ module tb;
   integer i, err = 0;
   bcd7seg dut(.ui_in(ui_in), .uo_out(uo_out));
   initial begin
+    $dumpfile("tb.vcd");
+    $dumpvars(0, tb);
     exp[0]=7'b1000000; exp[1]=7'b1111001; exp[2]=7'b0100100;
     exp[3]=7'b0110000; exp[4]=7'b0011001; exp[5]=7'b0010010;
     exp[6]=7'b0000010; exp[7]=7'b1111000; exp[8]=7'b0000000;
