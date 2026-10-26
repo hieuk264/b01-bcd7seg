@@ -1,0 +1,8 @@
+{
+  "DESIGN_NAME": "bcd7seg",
+  "VERILOG_FILES": "dir::src/bcd7seg.v",
+  "CLOCK_PORT": null,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 100, 100],
+  "PL_TARGET_DENSITY_PCT": 40
+}
