@@ -17,6 +17,7 @@ module tb;
     end
     for (i=10;i<16;i=i+1) begin
       ui_in=i; #1;
+      $display("Dau vao=%04b | Dau ra thuc te=%08b", ui_in, uo_out);
       if (uo_out !== 8'b11111111) begin err=err+1; $display("LOI ma khong hop le %0d: %b",i,uo_out); end
     end
     if (err==0) $display("TAT CA CA KIEM THU DAT"); else $display("%0d LOI",err);
