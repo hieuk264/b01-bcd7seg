@@ -1,2 +1,9 @@
 runs/
 sim
+tb.vcd
+test.vvp
+*.vcd
+*.vvp
+sim
+t
+t2
