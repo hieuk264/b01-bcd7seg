@@ -12,6 +12,7 @@ module tb;
     exp[9]=7'b0010000;
     for (i=0;i<10;i=i+1) begin
       ui_in=i; #1;
+      $display("Dau vao=%04b | Dau ra thuc te=%08b", ui_in, uo_out);
       if (uo_out !== {1'b0,exp[i]}) begin err=err+1; $display("LOI so %0d: %b",i,uo_out); end
     end
     for (i=10;i<16;i=i+1) begin
